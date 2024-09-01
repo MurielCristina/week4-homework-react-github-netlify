@@ -1,0 +1,11 @@
+.app {
+  text-align: center;
+}
+body {
+  background-color: #ab8fe9;
+}
+.container {
+  background-color: white;
+  max-width: 80%;
+  margin: auto;
+}
