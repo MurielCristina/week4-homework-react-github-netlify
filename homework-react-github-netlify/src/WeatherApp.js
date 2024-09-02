@@ -10,11 +10,11 @@ export default function WeatherApp() {
     function showWeatherData(response) {
       let city = response.data.city;
       let country = response.data.country;
-      let description = response.data.condition.description;
-      let humidity = response.data.temperature.humidity;
-      let wind = response.data.wind.speed;
-      let icon = response.data.condition.icon_url;
-      let temperature = response.data.temperature.current;
+      let description = response.data.daily[0].condition.description;
+      let humidity = response.data.daily[0].temperature.humidity;
+      let wind = response.data.daily[0].wind.speed;
+      let icon = response.data.daily[0].condition.icon_url;
+      let temperature = response.data.daily[0].temperature.day;
 
       setWeatherForecast(
         <div>
@@ -36,7 +36,7 @@ export default function WeatherApp() {
       );
     }
 
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchCity}&key=73050fa355794447f81ab5349190dotd&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${searchCity}&key=73050fa355794447f81ab5349190dotd&units=metric`;
     axios.get(apiUrl).then(showWeatherData);
   }
 
