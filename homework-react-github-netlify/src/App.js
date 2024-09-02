@@ -5,6 +5,7 @@ import Header from "./Header";
 
 import "./App.css";
 import "./Footer.css";
+import "./Header.css";
 
 function App() {
   return (
