@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherApp from "./WeatherApp";
 import Footer from "./Footer";
+import Header from "./Header";
 
 import "./App.css";
 import "./Footer.css";
@@ -10,9 +11,7 @@ function App() {
     <div className="app">
       <body>
         <div className="container">
-          <h3>SheCodes React Week 4 Homework</h3>
-          <h1>React + GitHub + Netlify</h1>
-          <WeatherApp />
+          <Header />
           <WeatherApp />
           <Footer />
         </div>
