@@ -13,6 +13,7 @@ function App() {
       <body>
         <div className="container">
           <Header />
+          <h2>Weather Forecast</h2>
           <WeatherApp />
           <Footer />
         </div>

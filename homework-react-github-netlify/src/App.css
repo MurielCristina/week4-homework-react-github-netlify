@@ -13,6 +13,10 @@ body {
   box-shadow: 0 30px 50px #41326414;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 .form {
   border-bottom: 1px solid #f9f7fe;
   margin-top: 40px;
