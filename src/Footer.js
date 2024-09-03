@@ -22,7 +22,7 @@ export default function Footer() {
         </a>{" "}
         and{" "}
         <a
-          href="https://app.netlify.com/sites/strong-druid-c0c636/overview"
+          href="https://imaginative-valkyrie-a77462.netlify.app"
           target="_blank"
           rel="noreferrer"
         >
